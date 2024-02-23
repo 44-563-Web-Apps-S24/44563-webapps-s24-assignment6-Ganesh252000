@@ -49,6 +49,11 @@
                 }
                 const resultElement = document.getElementById('result');
                 resultElement.innerHTML = `Correct: ${correct},Wrong: ${wrong}`;
+                if(wrong>correct)
+                {
+                    resultElement.innerHTML = "Sorry to many wrong gusses";
+                }
+                
             }
             function resolveForm ()
             {
